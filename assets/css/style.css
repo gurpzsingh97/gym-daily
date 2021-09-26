@@ -17,7 +17,8 @@ body{
     text-align: center;
     list-style-type: none;
     background-color: rgba(255, 255, 0, 0.5);
-    min-height: 50px;
+    height: 150px;
+    margin-top: 25px;
 }
 .footer-style i{
     font-size: 160%;
@@ -26,38 +27,81 @@ body{
     color:black;
 }
 .hero-image{
-    background: url("https://wallpaperaccess.com/full/1087589.jpg") no-repeat center center;
-    height:60vh;
+    background: url("https://www.mensjournal.com/wp-content/uploads/2018/04/bxr_gym.jpg?w=1200&quality=86&strip=all") no-repeat center center;
+    filter:grayscale(100%);
+    height:70vh;
     width: 100%;
     background-size: cover;
 
-    animation: zoom-in;
+    animation: hero-image;
     animation-duration: 3s;
     animation-fill-mode: forwards;
 }
 
-@keyframes zoom-in{
+@keyframes hero-image{
     from{
         transform: scale(1);
+        filter:grayscale(100%);
     }
     to{
       transform: scale(1.1);
+      filter:none;
     }
 }
 .image-outer{
-    height:60vh;
+    height:70vh;
     width:100%;
     overflow:hidden;
     position: relative;
 }
 .image-text{
-    padding:25px;
-    background-color: tomato;
-    height:100px;
-    width:100px;
+    padding-right: 25px;
+    padding-left:40px;
+    padding-bottom: 10px;
+    padding-top:10px;
+    background-color: rgba(250, 234, 4, 0.644);
+    color: rgb(0, 0, 0);
+    height:200px;
+    width:300px;
     position: absolute;
-    bottom:5%;
-    right:5%;
+    bottom:10%;
+    right:10%;
+}
+.image-text p{
+    color:rgb(255, 255, 255);
+    height:50px;
+    width:200px;
+    background-color: rgb(0, 0, 0, 0.5);
+    padding-left: 10px;
+    position: absolute;
+    bottom: 20px;
+}
+.about-gym{
+    margin-top: 25px;
+    background-color: rgba(0, 0, 0, 0.11);
+}
+.about-gym img{
+    border-radius: 3%;
+    height:100%;
+    width:100%;
+    animation: img 3s;
+}
+
+.about-gym h2{
+    margin-top:30px;
+}
+
+@keyframes img{
+    from{
+        filter: grayscale(100%);
+    }
+    to{
+        filter:none;
+    }
+}
+.buttons{
+    background-color: rgba(255, 255, 0, 0.5);
+    color:black
 }
 
 @media screen and  (min-width: 992px) {
