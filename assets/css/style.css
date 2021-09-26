@@ -24,7 +24,41 @@ body{
     margin: 1%;
     padding: 3%;
     color:black;
-  }
+}
+.hero-image{
+    background: url("https://wallpaperaccess.com/full/1087589.jpg") no-repeat center center;
+    height:60vh;
+    width: 100%;
+    background-size: cover;
+
+    animation: zoom-in;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoom-in{
+    from{
+        transform: scale(1);
+    }
+    to{
+      transform: scale(1.1);
+    }
+}
+.image-outer{
+    height:60vh;
+    width:100%;
+    overflow:hidden;
+    position: relative;
+}
+.image-text{
+    padding:25px;
+    background-color: tomato;
+    height:100px;
+    width:100px;
+    position: absolute;
+    bottom:5%;
+    right:5%;
+}
 
 @media screen and  (min-width: 992px) {
     .nav-move{
