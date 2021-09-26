@@ -53,6 +53,7 @@ body{
     width:100%;
     overflow:hidden;
     position: relative;
+    border-bottom: 5px solid black;
 }
 .image-text{
     padding-right: 25px;
